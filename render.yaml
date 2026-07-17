@@ -1,0 +1,44 @@
+services:
+  - type: web
+    name: shubhframe-legal
+    runtime: static
+    buildCommand: echo "Static site ready"
+    staticPublishPath: ./public
+    autoDeployTrigger: commit
+    previews:
+      generation: manual
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=604800
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=300
+    routes:
+      - type: redirect
+        source: /privacy
+        destination: /privacy-policy/
+      - type: redirect
+        source: /terms
+        destination: /terms-of-service/
+      - type: redirect
+        source: /account-deletion
+        destination: /delete-account/
+      - type: redirect
+        source: /delete-account
+        destination: /delete-account/

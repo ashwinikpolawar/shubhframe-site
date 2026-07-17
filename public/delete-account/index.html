@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request permanent deletion of your ShubhFrame account and associated data.">
+  <title>Delete Your ShubhFrame Account</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="ShubhFrame legal home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 5h14v4H9v6h6v-3h4v7H5V5Z" fill="currentColor"/></svg></span>
+        <span>ShubhFrame</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms-of-service/">Terms</a>
+        <a href="/delete-account/" aria-current="page">Delete account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Account deletion</span>
+        <h1>Delete your ShubhFrame account</h1>
+        <p class="meta">Use this page even if you no longer have the app installed. Account deletion is permanent.</p>
+      </div>
+    </section>
+
+    <div class="container deletion-shell">
+      <section class="panel" aria-labelledby="request-title">
+        <h2 id="request-title">Submit a deletion request</h2>
+        <p>Complete the fields below. The page prepares an email to ShubhFrame Support; it does not upload your details to this website or to a form provider.</p>
+
+        <form id="deletion-form" class="form-grid" novalidate>
+          <label for="account-email">
+            Account email
+            <span>Enter the email address used to sign in to ShubhFrame.</span>
+            <input id="account-email" name="accountEmail" type="email" autocomplete="email" required placeholder="you@example.com">
+          </label>
+
+          <label for="account-uid">
+            Firebase UID (optional)
+            <span>Include it only when you know it. It can help identify the correct account.</span>
+            <input id="account-uid" name="accountUid" type="text" autocomplete="off" placeholder="Optional account identifier">
+          </label>
+
+          <label for="reason">
+            Reason (optional)
+            <span>You do not need to provide a reason to request deletion.</span>
+            <textarea id="reason" name="reason" placeholder="Optional details"></textarea>
+          </label>
+
+          <label class="checkbox-row" for="confirm-delete">
+            <input id="confirm-delete" name="confirmDelete" type="checkbox" required>
+            <span>I understand that deleting my account is permanent and may remove projects, cloud-render files, generated outputs, and account access.</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="button danger" type="submit">Prepare deletion email</button>
+            <button class="button" id="copy-request" type="button">Copy request</button>
+          </div>
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="notice success">
+          No email app? Send a message manually to <a href="mailto:indian.insect.killer@gmail.com?subject=ShubhFrame%20account%20deletion%20request">indian.insect.killer@gmail.com</a> with the subject <strong>ShubhFrame account deletion request</strong>. Send it from the email address registered with your account whenever possible.
+        </div>
+      </section>
+
+      <aside class="panel" aria-labelledby="process-title">
+        <h2 id="process-title">What happens next</h2>
+        <ol class="steps">
+          <li><div><strong>Request received</strong><br>Support reviews the email and identifies the ShubhFrame account.</div></li>
+          <li><div><strong>Ownership verification</strong><br>You may receive a verification message. Never send your password, Firebase token, or one-time password.</div></li>
+          <li><div><strong>Deletion completed</strong><br>Valid requests are normally completed within 30 days, unless a shorter period is required by law.</div></li>
+        </ol>
+
+        <h3>Data normally deleted</h3>
+        <ul class="data-list">
+          <li>Authentication account and account identifier</li>
+          <li>Email and account profile data held by ShubhFrame</li>
+          <li>Push-notification token linked to the account</li>
+          <li>Cloud project inputs and rendering metadata</li>
+          <li>Generated cloud-video outputs associated with the account</li>
+        </ul>
+
+        <h3>Limited retention</h3>
+        <p>We may retain narrowly limited records when necessary for security, fraud prevention, legal compliance, dispute resolution, or backup integrity. Such data is not used for ordinary account activity and is removed when the retention purpose expires.</p>
+      </aside>
+    </div>
+
+    <section class="section">
+      <div class="container legal-doc">
+        <h2>Delete from within the app</h2>
+        <p>When you can access ShubhFrame, use the in-app deletion pathway at <strong>Settings → Account → Delete Account</strong>. The web request above remains available for users who have uninstalled the app or cannot sign in.</p>
+        <h2>Delete specific cloud data without deleting the account</h2>
+        <p>You may request deletion of specific uploaded or generated cloud files without deleting your whole account. Email <a href="mailto:indian.insect.killer@gmail.com">indian.insect.killer@gmail.com</a> with the subject <strong>ShubhFrame data deletion request</strong> and describe the job or files to remove.</p>
+        <p>For more detail, review the <a href="/privacy-policy/#retention">retention and deletion section of the Privacy Policy</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span data-current-year>2026</span> ShubhFrame. All rights reserved.</span>
+      <div class="footer-links"><a href="/">Home</a><a href="/privacy-policy/">Privacy</a><a href="/terms-of-service/">Terms</a></div>
+    </div>
+  </footer>
+</body>
+</html>
