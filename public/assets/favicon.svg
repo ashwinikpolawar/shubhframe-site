@@ -1,6 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffb347"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient></defs>
-  <rect width="64" height="64" rx="18" fill="#07111f"/>
-  <rect x="10" y="10" width="44" height="44" rx="14" fill="url(#g)"/>
-  <path d="M22 22h20v5H27v10h10v-5h5v10H22z" fill="#23180d"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" role="img" aria-label="ShubhFrame">
+  <defs>
+    <linearGradient id="sf14-ring" x1="7" y1="0" x2="7" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F6A03A"/>
+      <stop offset="100%" stop-color="#E23A78"/>
+    </linearGradient>
+    <linearGradient id="sf14-flame" x1="7" y1="1.4" x2="7" y2="8.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE27A"/>
+      <stop offset="50%" stop-color="#FF8A28"/>
+      <stop offset="100%" stop-color="#FF5514"/>
+    </linearGradient>
+    <linearGradient id="sf14-bowl" x1="7" y1="7.6" x2="7" y2="12.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF8C42"/>
+      <stop offset="100%" stop-color="#E23A78"/>
+    </linearGradient>
+  </defs>
+  <rect width="14" height="14" rx="3.2" fill="url(#sf14-ring)"/>
+  <rect x="1" y="1" width="12" height="12" rx="2.4" fill="#3B1466"/>
+  <rect x="2" y="5" width="1" height="1" fill="#F59A32"/>
+  <rect x="3" y="6" width="1" height="1" fill="#F59A32"/>
+  <rect x="2" y="7" width="1" height="1" fill="#E87838"/>
+  <rect x="11" y="5" width="1" height="1" fill="#F59A32"/>
+  <rect x="10" y="6" width="1" height="1" fill="#F59A32"/>
+  <rect x="11" y="7" width="1" height="1" fill="#E87838"/>
+  <path fill="url(#sf14-flame)" d="M7 1.55c1.35 1.45 2.15 2.95 2.05 4.55C8.9 7.55 8.05 8.45 7 8.45S5.1 7.55 4.95 6.1C4.85 4.5 5.65 3 7 1.55z"/>
+  <path fill="#3B1466" d="M7 4.85c.55.5.8 1.15.65 1.75C7.5 7.05 7.25 7.3 7 7.3s-.5-.25-.65-.7C6.2 6 6.45 5.35 7 4.85z"/>
+  <path fill="url(#sf14-bowl)" d="M3.35 8.15c0 .05 1.7 1.85 3.65 1.85s3.65-1.8 3.65-1.85c0 1.15-1.5 2.15-3.65 2.15S3.35 9.3 3.35 8.15z"/>
+  <path fill="url(#sf14-bowl)" d="M4.15 10.15c0 .05 1.25 1.2 2.85 1.2s2.85-1.15 2.85-1.2c0 .85-1.15 1.55-2.85 1.55s-2.85-.7-2.85-1.55z"/>
 </svg>
